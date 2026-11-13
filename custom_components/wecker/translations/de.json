@@ -1,0 +1,78 @@
+{
+  "services": {
+    "snooze": {
+      "name": "Schlummern",
+      "description": "Klingelnden Wecker schlummern lassen (alle der Bettseite oder einen bestimmten).",
+      "fields": {
+        "alarm_id": {
+          "name": "Wecker-ID",
+          "description": "Nur diesen Wecker"
+        },
+        "seite": {
+          "name": "Bettseite",
+          "description": "z. B. links oder rechts"
+        }
+      }
+    },
+    "stop": {
+      "name": "Wecker aus",
+      "description": "Klingelnden oder schlummernden Wecker beenden.",
+      "fields": {
+        "alarm_id": {
+          "name": "Wecker-ID",
+          "description": "Nur diesen Wecker"
+        },
+        "seite": {
+          "name": "Bettseite",
+          "description": "z. B. links oder rechts"
+        }
+      }
+    },
+    "test": {
+      "name": "Wecker testen",
+      "description": "Wecker sofort klingeln lassen (Test).",
+      "fields": {
+        "alarm_id": {
+          "name": "Wecker-ID",
+          "description": "ID des Weckers"
+        }
+      }
+    },
+    "reload_sounds": {
+      "name": "Wecktöne neu einlesen",
+      "description": "Ordner /config/www/wecker/toene neu einlesen."
+    },
+    "heizdecke_an": {
+      "name": "Heizdecke an",
+      "description": "Heizdecke einer Bettseite einschalten (Laufzeit immer begrenzt, Übertemperatur-Schutz aktiv).",
+      "fields": {
+        "seite": {
+          "name": "Bettseite",
+          "description": "links oder rechts"
+        },
+        "temperatur": {
+          "name": "Zieltemperatur",
+          "description": "°C (höchstens die eingestellte Maximaltemperatur)"
+        },
+        "dauer_min": {
+          "name": "Dauer",
+          "description": "Minuten"
+        },
+        "dauerhaft": {
+          "name": "Dauerhaft",
+          "description": "bis zur maximalen Dauer für Dauerbetrieb"
+        }
+      }
+    },
+    "heizdecke_aus": {
+      "name": "Heizdecke aus",
+      "description": "Heizdecke einer Bettseite ausschalten.",
+      "fields": {
+        "seite": {
+          "name": "Bettseite",
+          "description": "links oder rechts"
+        }
+      }
+    }
+  }
+}

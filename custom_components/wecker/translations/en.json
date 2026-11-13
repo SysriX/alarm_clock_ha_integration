@@ -1,0 +1,78 @@
+{
+  "services": {
+    "snooze": {
+      "name": "Snooze",
+      "description": "Snooze a ringing alarm (all alarms of the bed side or a specific one).",
+      "fields": {
+        "alarm_id": {
+          "name": "Alarm ID",
+          "description": "Only this alarm"
+        },
+        "seite": {
+          "name": "Bed side",
+          "description": "e.g. links (left) or rechts (right)"
+        }
+      }
+    },
+    "stop": {
+      "name": "Stop alarm",
+      "description": "Stop a ringing or snoozing alarm.",
+      "fields": {
+        "alarm_id": {
+          "name": "Alarm ID",
+          "description": "Only this alarm"
+        },
+        "seite": {
+          "name": "Bed side",
+          "description": "e.g. links (left) or rechts (right)"
+        }
+      }
+    },
+    "test": {
+      "name": "Test alarm",
+      "description": "Let an alarm ring immediately (test).",
+      "fields": {
+        "alarm_id": {
+          "name": "Alarm ID",
+          "description": "ID of the alarm"
+        }
+      }
+    },
+    "reload_sounds": {
+      "name": "Reload alarm sounds",
+      "description": "Rescan the folder /config/www/wecker/toene."
+    },
+    "heizdecke_an": {
+      "name": "Heated blanket on",
+      "description": "Turn on the heated blanket of a bed side (runtime always limited, over-temperature protection active).",
+      "fields": {
+        "seite": {
+          "name": "Bed side",
+          "description": "links (left) or rechts (right)"
+        },
+        "temperatur": {
+          "name": "Target temperature",
+          "description": "°C (at most the configured maximum temperature)"
+        },
+        "dauer_min": {
+          "name": "Duration",
+          "description": "Minutes"
+        },
+        "dauerhaft": {
+          "name": "Continuous",
+          "description": "Up to the maximum duration for continuous operation"
+        }
+      }
+    },
+    "heizdecke_aus": {
+      "name": "Heated blanket off",
+      "description": "Turn off the heated blanket of a bed side.",
+      "fields": {
+        "seite": {
+          "name": "Bed side",
+          "description": "links (left) or rechts (right)"
+        }
+      }
+    }
+  }
+}

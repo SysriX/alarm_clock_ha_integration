@@ -1,0 +1,53 @@
+snooze:
+  fields:
+    alarm_id:
+      example: "a1b2c3d4e5f6"
+      selector:
+        text:
+    seite:
+      example: links
+      selector:
+        text:
+stop:
+  fields:
+    alarm_id:
+      selector:
+        text:
+    seite:
+      example: links
+      selector:
+        text:
+test:
+  fields:
+    alarm_id:
+      required: true
+      selector:
+        text:
+reload_sounds:
+heizdecke_an:
+  fields:
+    seite:
+      required: true
+      example: links
+      selector:
+        select:
+          options: [links, rechts]
+    temperatur:
+      example: 30
+      selector:
+        number: {min: 15, max: 45, step: 0.5, unit_of_measurement: "°C"}
+    dauer_min:
+      example: 60
+      selector:
+        number: {min: 5, max: 1440, unit_of_measurement: min}
+    dauerhaft:
+      selector:
+        boolean:
+heizdecke_aus:
+  fields:
+    seite:
+      required: true
+      example: links
+      selector:
+        select:
+          options: [links, rechts]
