@@ -5,6 +5,9 @@ and/or a `media_player`, plus per bed side **weight / occupancy** from load cell
 over-temperature protection. A watchdog wakes you even if the tablet's dashboard hangs (via Fully Kiosk).
 All alarms, settings and the event log are stored in **MariaDB/MySQL** (local fallback copy in `.storage`).
 
+![Alarm Clock & Bed preview](docs/images/preview.png)
+*Bedside tablet with the [Room Panel card](https://github.com/SysriX/room_panel_ha_card): alarms, clock, bed weight per side and heated blanket (UI in German)*
+
 - Domain: `wecker` (German name kept for compatibility; config keys, services and entity ids are German too)
 - Version: 1.4.0
 - UI language: German. Bed sides default to `links` (left) and `rechts` (right).
